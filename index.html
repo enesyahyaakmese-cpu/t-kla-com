@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seni Seviyorum ❤️</title>
+<style>
+body{
+margin:0;min-height:100vh;display:flex;align-items:center;
+justify-content:center;text-align:center;font-family:Arial;
+background:linear-gradient(135deg,#ff758c,#ff7eb3,#ffb199);
+color:white;overflow:hidden
+}
+.kart{
+padding:40px 25px;border-radius:30px;
+background:#ffffff30;backdrop-filter:blur(10px);
+box-shadow:0 20px 60px #0004
+}
+.heart{font-size:70px;animation:kalp 1s infinite}
+h1{font-size:50px}
+p{font-size:20px}
+button{
+padding:14px 28px;border:0;border-radius:30px;
+font-size:18px;font-weight:bold;color:#ff4f7b;background:white
+}
+@keyframes kalp{50%{transform:scale(1.2)}}
+</style>
+</head>
+<body>
+<div class="kart">
+<div class="heart">❤️</div>
+<h1>SENİ SEVİYORUM</h1>
+<p>Kalbimin en güzel yerinde hep sen varsın. 💕</p>
+<button onclick="mesaj()">Bana tıkla ❤️</button>
+<p id="sonuc"></p>
+</div>
 
+<script>
+function mesaj(){
+document.getElementById("sonuc").innerHTML=
+"İyi ki varsın! ❤️ Seni çok seviyorum. 💖";
+}
+</script>
+</body>
+</html>
